@@ -33,8 +33,8 @@ public class ConnectionExamples {
                                                          String password) {
         String masterName = "redisMaster";
         Set<String> sentinels = new HashSet<>();
-        sentinels.add("localhost:6379");
-        sentinels.add("localhost:7379");
+        sentinels.add("172.17.0.3:6379");
+        sentinels.add("172.17.0.3:7379");
 
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(maxConnections);
